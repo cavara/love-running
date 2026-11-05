@@ -86,6 +86,7 @@ nav {
 
 /* Main*/
 main {
+    margin-top: 47px;
   background-color: lightblue;
   /* Make main element take up any surplus space to push footer down"*/
   flex: 1 0 auto;
@@ -94,4 +95,26 @@ main {
 /* Footer */
 footer {
   background-color: orange;
+}
+
+/* Media query tablets and larger */
+@media screen and (min-width: 768px) {
+    nav{
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+
+    }
+    #menu{
+        display: flex;
+
+    }
+    #menu > li {
+        padding-left: 1rem;
+    }
+    .nav-toggle-label{
+        display: none;
+    }
 }
